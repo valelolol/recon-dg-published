@@ -1,5 +1,2 @@
-from src.hello import greet
-
-
-def test_greet():
-    assert greet("World") == "Hello, World!"
+def greet(name: str = "world") -> str:
+    return f"Hello, {name}!"
